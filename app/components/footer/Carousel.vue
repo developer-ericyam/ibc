@@ -17,7 +17,7 @@ const items = [
   "/images/logos/logo-wm.png",
   "/images/logos/logo-ace333.png",
   "/images/logos/logo-ia.png",
-  "/images/logos/logo-allBet.png",
+  "/images/logos/logo-allbet.png",
   "/images/logos/logo-asiaGaming.png",
   "/images/logos/logo-betsoft.png",
   "/images/logos/logo-bgGaming.png",
