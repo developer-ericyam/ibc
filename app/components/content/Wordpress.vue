@@ -23,34 +23,36 @@ const url = `https://api.ibc003myr.com/wp-json/wp/v2/pages?slug=${slug}-${lang}`
 const { data } = await useFetch<any[]>(url);
 if (data.value && data.value.length) {
   const { content, yoast_head_json } = data.value[0];
-  contentHTML.value = DOMPurify.sanitize(content.rendered);
-  yoast.value = yoast_head_json;
+  if (content) {
+    contentHTML.value = DOMPurify.sanitize(content.rendered);
+    yoast.value = yoast_head_json;
 
-  const robots = yoast.value.robots;
+    const robots = yoast.value.robots;
 
-  useHead({
-    title: yoast.value.title || "Title",
-    link: [
-      {
-        rel: "canonical",
-        href: yoast.value.canonical || "https://uw99mys.com",
-      },
-    ],
-    meta: [
-      {
-        name: "robots",
-        content: `${robots["max-snippet"]}, ${robots["max-image-preview"]}, ${robots["max-video-preview"]}`,
-      },
-      { property: "og:title", content: yoast.value.og_title },
-      { property: "og:description", content: yoast.value.og_description },
-      { property: "og:locale", content: yoast.value.og_locale },
-      { property: "og:site_name", content: yoast.value.og_site_name },
-      { property: "og:type", content: yoast.value.og_type },
-      { property: "og:url", content: yoast.value.og_url },
-      { name: "twitter:card", content: yoast.value.twitter_card },
-      { name: "description", content: yoast.value.description },
-    ],
-  });
+    useHead({
+      title: yoast.value.title || "Title",
+      link: [
+        {
+          rel: "canonical",
+          href: yoast.value.canonical || "https://ibc003myr.com",
+        },
+      ],
+      meta: [
+        {
+          name: "robots",
+          content: `${robots["max-snippet"]}, ${robots["max-image-preview"]}, ${robots["max-video-preview"]}`,
+        },
+        { property: "og:title", content: yoast.value.og_title },
+        { property: "og:description", content: yoast.value.og_description },
+        { property: "og:locale", content: yoast.value.og_locale },
+        { property: "og:site_name", content: yoast.value.og_site_name },
+        { property: "og:type", content: yoast.value.og_type },
+        { property: "og:url", content: yoast.value.og_url },
+        { name: "twitter:card", content: yoast.value.twitter_card },
+        { name: "description", content: yoast.value.description },
+      ],
+    });
+  }
 }
 
 function onClickHandler() {

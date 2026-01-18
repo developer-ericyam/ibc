@@ -7,7 +7,7 @@
       <div class="bd">
         <div class="marquee-wrapper">
           <div class="marquee">
-            UW99 Sebagai Syarikat Pertaruhan Kasino Dalam Talian Dipercayai di
+            IBC003 Sebagai Syarikat Pertaruhan Kasino Dalam Talian Dipercayai di
             Malaysia dan Asia, komitmen kami untuk membuatkan anda berasa
             seperti di rumah sendiri.
           </div>

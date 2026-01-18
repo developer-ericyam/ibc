@@ -3,7 +3,7 @@
     <div class="titleCell">
       <h2>Best Games</h2>
       <p>
-        UW99 trusted online casino is serving you all with the best casino
+        IBC003 trusted online casino is serving you all with the best casino
         gaming services.
       </p>
     </div>
@@ -48,7 +48,7 @@
         <div class="gameTxt">
           <p class="eventTit">SPORTS</p>
           <p class="eventNotice">
-            At UW99, we provide only the best gaming technology with
+            At IBC003, we provide only the best gaming technology with
             World-famous game products.Making your experience to another
             level!Show off your Prediction Skill, Win original millions of
             Freebet!
@@ -117,7 +117,7 @@
         <div class="gameTxt">
           <p class="eventTit">CASINO</p>
           <p class="eventNotice">
-            UW99 Malaysia is a spectacular casino that takes you to an unreal
+            IBC003 Malaysia is a spectacular casino that takes you to an unreal
             world of online casino games. The live games are the perfect choice
             for all types of casino lovers. Whatever your experience level is,
             you can join. We are adding variety consistently to match your
@@ -205,10 +205,10 @@
         <div class="gameTxt">
           <p class="eventTit">POKER</p>
           <p class="eventNotice">
-            UW99 is home to the best online poker events. Every year we run the
+            IBC003 is home to the best online poker events. Every year we run the
             best online tournament series in the world. We also host the best
             weekly tournaments, plus many more every day of the week. With a
-            game starting every second, UW99 is the only place to play
+            game starting every second, IBC003 is the only place to play
             tournament poker online.
           </p>
           <div class="tagList flexChose uw88Chose">
@@ -265,7 +265,7 @@
         <div class="gameTxt">
           <p class="eventTit">SLOT</p>
           <p class="eventNotice">
-            UW99 Malaysia currently offers the best online slots that you can
+            IBC003 Malaysia currently offers the best online slots that you can
             love. We offer very quick payouts with outstanding customer service.
             It’s a place where you can play online slots as long as you want and
             still not feel bored. We are the best in terms of game collection.
@@ -315,7 +315,7 @@
             digits from a set of numbers, ranging from 0000 to 9999. A draw of
             twenty three winning digits is usually carried out each time. You
             win a prize if you successfully match your numbers to the draw
-            results.Get the Chance to Win Big With 4D Lottery UW99 Malaysia!
+            results.Get the Chance to Win Big With 4D Lottery IBC003 Malaysia!
           </p>
           <div class="tagList flexChose uw88Chose">
             <ul style="flex-wrap: nowrap; margin-bottom: -14px">
@@ -375,9 +375,9 @@
         <div class="gameTxt">
           <p class="eventTit">JACKPOT</p>
           <p class="eventNotice">
-            Mega Jackpot winner will ONLY get the 80% of the Jacpot Amount,20%
+            Mega Jackpot winner will ONLY get the 80% of the Jackpot Amount,20%
             of the Jackpot Amount will become the next Starting Jackpot Amount
-            in UW99!
+            in IBC003!
           </p>
           <div class="tagList flexChose trueList">
             <ul style="flex-wrap: nowrap; margin-top: 0">

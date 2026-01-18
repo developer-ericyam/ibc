@@ -188,4 +188,10 @@ const route = useRoute();
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  #cssmenunew {
+    display: none !important;
+  }
+}
 </style>

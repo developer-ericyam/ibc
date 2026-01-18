@@ -157,7 +157,7 @@
               </div>
             </div>
             <div class="copyRight">
-              COPYRIGHT © 2020 UW99 All RIGHTS RESERVED
+              Copyright © 2014-2024 | IBC003 | All Rights Reserved
             </div>
           </div>
         </div>

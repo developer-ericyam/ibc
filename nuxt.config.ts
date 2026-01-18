@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/ficon_322.png" },
+        { rel: "icon", type: "image/x-icon", href: "/ibc003-23.ico" },
         {
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
