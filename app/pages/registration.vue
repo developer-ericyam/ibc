@@ -4,9 +4,9 @@
       <div id="theme-content" bis_skin_checked="1">
         <div id="theme-contain-login" bis_skin_checked="1">
           <div class="contaiBox sportBetMy uw88casino" bis_skin_checked="1">
-            <div class="nrBox" style="padding-top: 50px" bis_skin_checked="1">
+            <div class="nrBox" bis_skin_checked="1">
               <div class="flexBar" bis_skin_checked="1">
-                <div
+                <!-- <div
                   class="flexLeft"
                   style="width: 650px; left: -75px"
                   bis_skin_checked="1"
@@ -21,7 +21,7 @@
                       class="registercenter gymani3"
                     />
                   </div>
-                </div>
+                </div> -->
                 <div
                   class="flexRight"
                   style="width: 45%; margin-top: 25px"
@@ -307,6 +307,7 @@ onMounted(() => {
       .flexBar {
         position: relative;
         display: flex;
+        justify-content: center;
 
         .flexLeft {
           width: 854px;
@@ -321,6 +322,7 @@ onMounted(() => {
           margin-top: 100px;
 
           h3.golden {
+            text-align: center;
             font-size: 56px;
             line-height: 64px;
             font-family: "Galano-Bold", sans-serif;
@@ -405,7 +407,7 @@ input[type="password"] {
 }
 
 form#registerform {
-  width: 76%;
+  width: 100%;
 
   dl#groupVerifyCode dd {
     border: 0px solid red;

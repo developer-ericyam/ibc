@@ -2,7 +2,7 @@
   <div>
     <AppHeader />
     <slot />
-    <AppFooter />
+    <AppFooterNew />
   </div>
 </template>
 

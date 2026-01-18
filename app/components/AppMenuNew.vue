@@ -4,8 +4,8 @@
     <div id="divHeader-menu">
       <div id="cssmenunew">
         <ul>
-          <li :class="{ active: route.path === localePath('/') }">
-            <NuxtLinkLocale to="/">{{ t("pageHome") }}</NuxtLinkLocale>
+          <li :class="{ active: route.path == localePath('/home') }">
+            <NuxtLinkLocale to="/home">{{ t("pageHome") }}</NuxtLinkLocale>
           </li>
           <li :class="{ active: route.path === localePath('/casino') }">
             <NuxtLinkLocale to="/casino">{{ t("pageCasino") }}</NuxtLinkLocale>
@@ -43,15 +43,23 @@
           </li>
           <li>
             <NuxtLinkLocale
-              to="https://uw99ranking.com/jackpot/jackpot.aspx"
+              :to="`https://ibc003mys.com/${locale}/hall_of_ranking`"
               target="_blank"
             >
-              {{ t("pageJackpot") }}
+              {{ t("pageRanking") }}
             </NuxtLinkLocale>
           </li>
           <li>
             <NuxtLinkLocale
-              :to="`https://uw99my.com/${locale}/vip`"
+              :to="`https://ibc003mys.com/${locale}/affiliate`"
+              target="_blank"
+            >
+              {{ t("pageAffiliate") }}
+            </NuxtLinkLocale>
+          </li>
+          <li>
+            <NuxtLinkLocale
+              :to="`https://ibc003mys.com/${locale}/vip`"
               target="_blank"
             >
               {{ t("pageVIP") }}
@@ -59,10 +67,26 @@
           </li>
           <li>
             <NuxtLinkLocale
-              to="https://uw99my.com/index.php?view=prod&sort=DATE&lang=en&p=1"
+              :to="`https://ibc003mys.com/${locale}/verify`"
               target="_blank"
             >
-              {{ t("pageRedeem") }}
+              {{ t("pageKYC") }}
+            </NuxtLinkLocale>
+          </li>
+          <li>
+            <NuxtLinkLocale
+              :to="`https://ibc003mys.com/${locale}/how-to-help`"
+              target="_blank"
+            >
+              {{ t("pageHelp") }}
+            </NuxtLinkLocale>
+          </li>
+          <li>
+            <NuxtLinkLocale
+              :to="`https://ibc003mys.com/${locale}/challenge`"
+              target="_blank"
+            >
+              {{ t("pageChallenge") }}
             </NuxtLinkLocale>
           </li>
         </ul>

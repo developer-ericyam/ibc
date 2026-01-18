@@ -7,7 +7,7 @@
     </div>
 
     <div id="divHeaderTop-logo" class="headerTop-logo">
-      <NuxtLinkLocale to="/">
+      <NuxtLinkLocale to="/home">
         <img src="/assets/images/logo.png" />
       </NuxtLinkLocale>
     </div>

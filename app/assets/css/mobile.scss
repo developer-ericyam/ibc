@@ -42,6 +42,11 @@
     width: 100% !important;
   }
 
+  .promos ul li {
+    display: flex !important;
+    justify-content: center;
+  }
+
   #cssmenu #menu-button {
     background: #efefef !important;
     color: #d3b7a4 !important;

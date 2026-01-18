@@ -7,13 +7,11 @@
     <div class="promos">
       <ul>
         <li>
-          <a href="#"
-            ><img src="~/assets/images/promotion/WEEKLY-LOSS-REBATES-338.png"
-          /></a>
+          <a href="#"><img src="~/assets/images/promotion/UDST1000.jpg" /></a>
         </li>
-        <li><img src="~/assets/images/promotion/REFER-FRIEND-BONUS.png" /></li>
-        <li><img src="~/assets/images/promotion/2.0Slot8001.jpg" /></li>
-        <li><img src="~/assets/images/promotion/10800243-1.png" /></li>
+        <li><img src="~/assets/images/promotion/Design_1000x200.jpg" /></li>
+        <li><img src="~/assets/images/promotion/Refer Friends 1000.jpg" /></li>
+        <li><img src="~/assets/images/promotion/Levelling Programme.jpg" /></li>
       </ul>
       <div class="button-more">
         <NuxtLinkLocale to="/promotion">View More</NuxtLinkLocale>
@@ -31,6 +29,10 @@
     width: 49%;
     display: inline-block;
     padding: 13px 3px;
+    border-radius: 50px;
+    img {
+      border-radius: 16px;
+    }
   }
 }
 

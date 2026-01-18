@@ -36,29 +36,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
         },
-        //   {
-        //     rel: "stylesheet",
-        //     href: "https://api.uw99mys.com/wp-content/plugins/elementor/assets/css/frontend.min.css",
-        //   },
-        //   {
-        //     rel: "stylesheet",
-        //     href: "https://api.uw99mys.com/wp-content/uploads/elementor/css/post-28.css",
-        //   },
-        //   {
-        //     rel: "stylesheet",
-        //     href: "https://api.uw99mys.com/wp-content/uploads/elementor/css/global.css",
-        //   },
-        // ],
-        // script: [
-        //   {
-        //     src: "https://api.uw99mys.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.3",
-        //     defer: true,
-        //   },
-        //   {
-        //     src: "https://api.uw99mys.com/wp-content/plugins/elementor/assets/js/tabs.c1b4f75451f3adfe2779.bundle.min.js",
-        //     defer: true,
-        //   },
       ],
     },
+  },
+  routeRules: {
+    "/": { redirect: "/en/home" },
+    "/en": { redirect: "/en/home" },
   },
 });

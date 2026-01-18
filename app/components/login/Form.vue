@@ -37,7 +37,7 @@
 
     <div class="popup-login-register">
       <hr />
-      <a href="/en/registration">Don't have account? <b>Register Now!</b></a>
+      <a href="/en/registration/748534">Don't have account? <b>Register Now!</b></a>
       <a href="#" onclick="LiveChatWidget.call('maximize')">Forget Password?</a>
     </div>
   </div>
