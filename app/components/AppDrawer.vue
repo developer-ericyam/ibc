@@ -181,6 +181,7 @@ watch(
   height: 100%;
   width: 100%;
   overflow-y: auto;
+  position: relative;
 
   .slideNav-header {
     position: relative;
