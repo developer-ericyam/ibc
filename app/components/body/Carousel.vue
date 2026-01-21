@@ -5,12 +5,14 @@
     </UCarousel>
     <div class="bannerAction">
       <a href="/en/registration/748534">REGISTER NOW</a>
-      <p>
-        Kasino Playtech, Kasino Leocity88, Kasino Oldtown, Kasino NewTown Kasino
-        12win, Kasino XPG, Kasino Touch2Bet, Kasino 998, Kasino 855, Kasino
-        Crown, Casino M88, Kasino W88
-      </p>
     </div>
+  </div>
+  <div class="test">
+    <p>
+      Kasino Playtech, Kasino Leocity88, Kasino Oldtown, Kasino NewTown Kasino
+      12win, Kasino XPG, Kasino Touch2Bet, Kasino 998, Kasino 855, Kasino Crown,
+      Casino M88, Kasino W88
+    </p>
   </div>
 </template>
 
@@ -36,6 +38,12 @@ const items = [
 
 <style scoped lang="scss">
 .carousel {
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    margin-top: -20px;
+  }
+
   &:after {
     content: "";
     background-color: #fff;
@@ -96,6 +104,27 @@ const items = [
   p {
     width: 50%;
     text-align: center;
+  }
+}
+
+.test {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  margin-top: -3.5vw;
+
+  p {
+    width: 50vw;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      width: 90vw;
+      font-size: 10px;
+      margin-top: 5vw;
+    }
   }
 }
 

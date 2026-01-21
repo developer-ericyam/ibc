@@ -152,7 +152,6 @@
                                 </option>
                                 <option value="MYR">MYR</option>
                                 <option value="SGD">SGD</option>
-                                <option value="AUD">AUD</option>
                               </select>
                             </dd>
                           </dl>

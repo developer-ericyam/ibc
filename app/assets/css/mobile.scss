@@ -283,3 +283,47 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .headerTop-bottom {
+    padding-bottom: 5.5vw !important;
+  }
+
+  .headerTop-logo > a > img {
+    height: 8vw !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .headerTop-bottom {
+    padding-bottom: 8.5vw !important;
+  }
+
+  .headerTop-logo > a > img {
+    height: 9vw !important;
+  }
+
+  .btn-language {
+    display: none !important;
+  }
+
+  .btn-login {
+    padding: 10px !important;
+    img {
+      height: 30px !important;
+      width: 30px !important;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .bannerAction a {
+    padding: 2vw 0vw !important;
+    font-size: 4vw !important;
+    border-radius: 3vw !important;
+    line-height: normal !important;
+    width: 176px !important;
+    display:flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,9 +1,16 @@
 <template>
   <div id="divHeaderTop-bottom" class="headerTop-bottom">
     <div id="headerTop-left" class="headerTop-left">
-      <div id="btnMenu" class="btn-menu" data-popup-open="slideNav">
-        <div><span /><span /><span /></div>
-      </div>
+      <AppDrawer>
+        <div
+          id="btnMenu"
+          class="btn-menu"
+          data-popup-open="slideNav"
+          @click="onClickMenu"
+        >
+          <div><span /><span /><span /></div>
+        </div>
+      </AppDrawer>
     </div>
 
     <div id="divHeaderTop-logo" class="headerTop-logo">
@@ -38,7 +45,9 @@
 </template>
 
 <script setup lang="ts">
-function onClickLoginHandler() {
+function onClickLoginHandler() {}
+
+function onClickMenu() {
   console.log("123");
 }
 </script>
@@ -95,7 +104,9 @@ function onClickLoginHandler() {
         -webkit-transition: -webkit-transform 0.3s linear;
         transition: -webkit-transform 0.3s linear;
         transition: transform 0.3s linear;
-        transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+        transition:
+          transform 0.3s linear,
+          -webkit-transform 0.3s linear;
 
         &:nth-child(2) {
           width: 25px;
