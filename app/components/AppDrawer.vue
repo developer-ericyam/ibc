@@ -180,6 +180,7 @@ watch(
 .popup-container {
   height: 100%;
   width: 100%;
+  overflow-y: auto;
 
   .slideNav-header {
     position: relative;
