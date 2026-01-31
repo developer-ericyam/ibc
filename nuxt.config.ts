@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "~/assets/css/menu.scss",
     "~/assets/css/footer.scss",
     "~/assets/css/mobile.scss",
+    "~/assets/css/lottery.scss",
   ],
   modules: [
     "@nuxt/icon",

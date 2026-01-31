@@ -1,0 +1,123 @@
+import TableMagnumJackpot from "~/components/lottery/TableMagnumJackpot.vue";
+import TableMagnumLife from "~/components/lottery/TableMagnumLife.vue";
+import TableSabah88 from "~/components/lottery/TableSabah88.vue";
+import TableSingaporeToto from "~/components/lottery/TableSingaporeToto.vue";
+import TableToto from "~/components/lottery/TableToto.vue";
+
+export const config = [
+  {
+    id: 1,
+    key: "magnum",
+    name: "Magnum 4D 萬能",
+    background: "#ff0",
+    color: "#444",
+  },
+  {
+    id: 2,
+    key: "magnum",
+    name: "Magnum Jackpot Gold萬能黃金万字积宝",
+    background: "#ff0",
+    color: "#444",
+    component: TableMagnumJackpot,
+  },
+  {
+    id: 3,
+    key: "magnum",
+    name: "Magnum Life万能天天彩",
+    background: "#ff0",
+    color: "#444",
+    component: TableMagnumLife,
+  },
+  {
+    id: 4,
+    key: "damacai",
+    name: "Da Ma Cai 1+3D 大馬彩",
+    background: "navy",
+    color: "#fff",
+  },
+  {
+    id: 5,
+    key: "damacai",
+    name: "Da Ma Cai 3+3D 大馬彩",
+    background: "navy",
+    color: "#fff",
+  },
+  {
+    id: 6,
+    key: "toto",
+    name: "SportsToto 4D 多多",
+    background: "#ad0006",
+    color: "#fff",
+  },
+  {
+    id: 7,
+    key: "toto",
+    name: "SportsToto 5D, 6D, Lotto多多六合彩",
+    background: "#ad0006",
+    color: "#fff",
+    component: TableToto,
+  },
+  {
+    id: 8,
+    key: "stc4d",
+    name: "Sandakan 4D 山打根",
+    background: "#f8c100",
+    color: "#060",
+  },
+  {
+    id: 9,
+    key: "cashsweep",
+    name: "Special CashSweep 砂勞越大萬",
+    background: "green",
+    color: "#fff",
+  },
+  {
+    id: 10,
+    key: "sabah88",
+    name: "Sabah 88 4D 沙巴萬字",
+    background: "#3333ff",
+    color: "#fff",
+    component: TableSabah88,
+  },
+  {
+    id: 11,
+    key: "singapore",
+    name: "Singapore 4D",
+    background: "#0378bb",
+    color: "#fff",
+    hideLogo: true,
+  },
+  {
+    id: 12,
+    key: "singapore",
+    name: "Singapore 4D",
+    background: "#0378bb",
+    color: "#fff",
+    hideLogo: true,
+    component: TableSingaporeToto,
+  },
+  {
+    id: 13,
+    key: "granddragon",
+    name: "Grand Dragon 4D 豪龙",
+    background: "#e81409",
+    color: "#fff",
+    format: "jpg",
+  },
+  {
+    id: 15,
+    key: "harihari",
+    name: "Lucky HariHari 天天好运",
+    background: "navy",
+    color: "#fff",
+    format: "jpg",
+  },
+  {
+    id: 16,
+    key: "perdana",
+    name: "Perdana Lottery 4D",
+    background: "#0065ca",
+    color: "#fff",
+    format: "jpg",
+  },
+];

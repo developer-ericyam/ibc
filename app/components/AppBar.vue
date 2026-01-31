@@ -47,9 +47,7 @@
 <script setup lang="ts">
 function onClickLoginHandler() {}
 
-function onClickMenu() {
-  console.log("123");
-}
+function onClickMenu() {}
 </script>
 
 <style scoped lang="scss">

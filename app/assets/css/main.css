@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@source inline('{sm:,md:,lg:,xl:,}grid-cols-{{1..12..1}}');
+@source inline('{sm:,md:,lg:,xl:,}col-span-{{1..12..1}}');
+
+
 :root {
   --ui-bg: #fff;
   --ui-text: #404654;

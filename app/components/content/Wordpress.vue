@@ -2,6 +2,7 @@
   <div v-if="contentHTML">
     <!-- eslint-disable-next-line vue/no-v-html -->
     <div class="content" v-html="contentHTML" />
+    <BaseLottery v-if="route.params.slug === 'ilottery'" />
   </div>
 </template>
 
@@ -55,9 +56,7 @@ if (data.value && data.value.length) {
   }
 }
 
-function onClickHandler() {
-  console.log("123");
-}
+function onClickHandler() {}
 
 onMounted(() => {
   const promoCards = document.querySelectorAll(".promo-card");

@@ -1,0 +1,18 @@
+.lottery-prize-title {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 25px;
+  text-align: center;
+}
+
+.lottery-prize-wrapper {
+  border: 1px solid #737373;
+  background-color: #737373;
+  > div {
+    text-align: center;
+    background-color: white;
+  }
+}
