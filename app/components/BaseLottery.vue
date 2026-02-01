@@ -17,7 +17,6 @@ import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import { config } from "~/constants/config";
-import { data as Test } from "~/constants/mock";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -68,9 +67,10 @@ async function fetchLotteryData() {
   }
 }
 
-fetchLotteryData();
+await fetchLotteryData();
 
 onMounted(() => {
+  console.log("onMounted...");
   interval = setInterval(() => {
     console.log("polling...");
     if (isWithinActiveTime()) fetchLotteryData();
