@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="lottery-wrapper">
-      <div class="grid grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <LotteryWrapper
           v-for="lottery in lotteries"
           :key="lottery.id"
@@ -17,6 +17,7 @@ import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import { config } from "~/constants/config";
+import { data as MockData } from "~/constants/mock";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -44,7 +45,8 @@ const { data: lotteries, refresh } = await useAsyncData(
   async () => {
     console.log("fetch...");
     const url = `https://api.loto4d.com/api/result?date=${new Date().getTime()}`;
-    const data = await $fetch<any>(url);
+    // const data = await $fetch<any>(url);
+    const data = MockData;
 
     if (data) {
       // Sort based on the order in config.ts
