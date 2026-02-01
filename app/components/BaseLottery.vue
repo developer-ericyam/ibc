@@ -40,11 +40,12 @@ function isWithinActiveTime(): boolean {
 
 // Fetch lottery data with SSR support
 const { data: lotteries, refresh } = await useAsyncData(
-  'lottery-results',
+  "lottery-results",
   async () => {
+    console.log("fetch...");
     const url = `https://api.loto4d.com/api/result?date=${new Date().getTime()}`;
     const data = await $fetch<any>(url);
-    
+
     if (data) {
       // Sort based on the order in config.ts
       return data.sort((a: any, b: any) => {
@@ -61,13 +62,15 @@ const { data: lotteries, refresh } = await useAsyncData(
     return [];
   },
   {
-    default: () => []
-  }
+    server: true,
+    lazy: false,
+    default: () => [],
+  },
 );
 
 onMounted(() => {
   console.log("onMounted...");
-  
+
   // Set up polling interval
   interval = setInterval(() => {
     console.log("polling...");
