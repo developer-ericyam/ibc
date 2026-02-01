@@ -44,4 +44,11 @@ export default defineNuxtConfig({
     "/": { redirect: "/en/home" },
     "/en": { redirect: "/en/home" },
   },
+  nitro: {
+    routeRules: {
+      "/wp-json/**": {
+        proxy: "https://api.ibc003myr.com/wp-json/**",
+      },
+    },
+  },
 });

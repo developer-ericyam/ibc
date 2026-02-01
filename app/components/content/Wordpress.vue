@@ -20,7 +20,7 @@ const contentHTML = ref<string>("");
 const yoast = ref<any>({});
 
 const lang = locale.value === "en" ? "" : locale.value;
-const url = `https://api.ibc003myr.com/wp-json/wp/v2/pages?slug=${slug}-${lang}`;
+const url = `/wp-json/wp/v2/pages?slug=${slug}-${lang}`;
 const { data } = await useFetch<any[]>(url);
 if (data.value && data.value.length) {
   const { content, yoast_head_json } = data.value[0];

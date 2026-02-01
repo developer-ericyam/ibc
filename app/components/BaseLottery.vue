@@ -21,8 +21,6 @@ import { config } from "~/constants/config";
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const loading = ref(false);
-const lotteries = ref<any>([]);
 let interval: number | undefined = undefined;
 
 function isWithinActiveTime(): boolean {
@@ -40,16 +38,16 @@ function isWithinActiveTime(): boolean {
   return false;
 }
 
-async function fetchLotteryData() {
-  try {
-    loading.value = true;
+// Fetch lottery data with SSR support
+const { data: lotteries, refresh } = await useAsyncData(
+  'lottery-results',
+  async () => {
     const url = `https://api.loto4d.com/api/result?date=${new Date().getTime()}`;
-    const { data } = await useFetch<any>(url);
-    // let data = { value: Test };
-
-    if (data.value) {
+    const data = await $fetch<any>(url);
+    
+    if (data) {
       // Sort based on the order in config.ts
-      lotteries.value = data.value.sort((a: any, b: any) => {
+      return data.sort((a: any, b: any) => {
         const indexA = config.findIndex((c) => c.id === a.category_id);
         const indexB = config.findIndex((c) => c.id === b.category_id);
 
@@ -60,20 +58,20 @@ async function fetchLotteryData() {
         return indexA - indexB;
       });
     }
-  } catch (err: any) {
-    console.log("Error fetching data:", err);
-  } finally {
-    loading.value = false;
+    return [];
+  },
+  {
+    default: () => []
   }
-}
-
-await fetchLotteryData();
+);
 
 onMounted(() => {
   console.log("onMounted...");
+  
+  // Set up polling interval
   interval = setInterval(() => {
     console.log("polling...");
-    if (isWithinActiveTime()) fetchLotteryData();
+    if (isWithinActiveTime()) refresh();
   }, 5000); // Refresh every 5 seconds
 });
 
