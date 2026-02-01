@@ -6,6 +6,14 @@ import TableToto from "~/components/lottery/TableToto.vue";
 
 export const config = [
   {
+    id: 13,
+    key: "granddragon",
+    name: "Grand Dragon 4D 豪龙",
+    background: "#e81409",
+    color: "#fff",
+    format: "jpg",
+  },
+  {
     id: 1,
     key: "magnum",
     name: "Magnum 4D 萬能",
@@ -13,12 +21,26 @@ export const config = [
     color: "#444",
   },
   {
-    id: 2,
-    key: "magnum",
-    name: "Magnum Jackpot Gold萬能黃金万字积宝",
-    background: "#ff0",
-    color: "#444",
-    component: TableMagnumJackpot,
+    id: 6,
+    key: "toto",
+    name: "SportsToto 4D 多多",
+    background: "#ad0006",
+    color: "#fff",
+  },
+  {
+    id: 4,
+    key: "damacai",
+    name: "Da Ma Cai 1+3D 大馬彩",
+    background: "navy",
+    color: "#fff",
+  },
+  {
+    id: 11,
+    key: "singapore",
+    name: "Singapore 4D",
+    background: "#0378bb",
+    color: "#fff",
+    hideLogo: true,
   },
   {
     id: 3,
@@ -29,24 +51,18 @@ export const config = [
     component: TableMagnumLife,
   },
   {
-    id: 4,
-    key: "damacai",
-    name: "Da Ma Cai 1+3D 大馬彩",
-    background: "navy",
-    color: "#fff",
+    id: 2,
+    key: "magnum",
+    name: "Magnum Jackpot Gold萬能黃金万字积宝",
+    background: "#ff0",
+    color: "#444",
+    component: TableMagnumJackpot,
   },
   {
     id: 5,
     key: "damacai",
     name: "Da Ma Cai 3+3D 大馬彩",
     background: "navy",
-    color: "#fff",
-  },
-  {
-    id: 6,
-    key: "toto",
-    name: "SportsToto 4D 多多",
-    background: "#ad0006",
     color: "#fff",
   },
   {
@@ -80,14 +96,6 @@ export const config = [
     component: TableSabah88,
   },
   {
-    id: 11,
-    key: "singapore",
-    name: "Singapore 4D",
-    background: "#0378bb",
-    color: "#fff",
-    hideLogo: true,
-  },
-  {
     id: 12,
     key: "singapore",
     name: "Singapore 4D",
@@ -95,14 +103,6 @@ export const config = [
     color: "#fff",
     hideLogo: true,
     component: TableSingaporeToto,
-  },
-  {
-    id: 13,
-    key: "granddragon",
-    name: "Grand Dragon 4D 豪龙",
-    background: "#e81409",
-    color: "#fff",
-    format: "jpg",
   },
   {
     id: 15,
