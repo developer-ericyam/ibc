@@ -70,6 +70,7 @@ const { data: lotteries, refresh } = await useAsyncData(
 
 onMounted(() => {
   console.log("onMounted...");
+  refresh();
 
   // Set up polling interval
   interval = setInterval(() => {
