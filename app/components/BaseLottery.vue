@@ -72,7 +72,7 @@ onMounted(() => {
   interval = setInterval(() => {
     console.log("polling...");
     if (isWithinActiveTime()) refresh();
-  }, 5000); // Refresh every 5 seconds
+  }, 1500); // Refresh every 1.5 seconds
 });
 
 onBeforeUnmount(() => {
