@@ -45,10 +45,8 @@ async function fetchLotteryData() {
   try {
     loading.value = true;
     const url = `https://api.loto4d.com/api/result?date=${new Date().getTime()}`;
-    // const { data } = await useFetch<any>(url);
-    let data = {
-      value: Test,
-    };
+    const { data } = await useFetch<any>(url);
+    // let data = { value: Test };
 
     if (data.value) {
       // Sort based on the order in config.ts
@@ -74,6 +72,7 @@ fetchLotteryData();
 
 onMounted(() => {
   interval = setInterval(() => {
+    console.log("polling...");
     if (isWithinActiveTime()) fetchLotteryData();
   }, 5000); // Refresh every 5 seconds
 });
