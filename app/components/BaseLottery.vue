@@ -45,8 +45,8 @@ const { data: lotteries, refresh } = await useAsyncData(
   async () => {
     console.log("fetch...");
     const url = `https://api.loto4d.com/api/result?date=${new Date().getTime()}`;
-    // const data = await $fetch<any>(url);
-    const data = MockData;
+    const data = await $fetch<any>(url);
+    // const data = MockData;
 
     if (data) {
       // Sort based on the order in config.ts
