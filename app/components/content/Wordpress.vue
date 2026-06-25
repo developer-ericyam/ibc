@@ -32,12 +32,12 @@ if (data.value && data.value.length) {
 
     useHead({
       title: yoast.value.title || "Title",
-      link: [
-        {
-          rel: "canonical",
-          href: yoast.value.canonical || "https://ibc003myr.com",
-        },
-      ],
+      // link: [
+      //   {
+      //     rel: "canonical",
+      //     href: yoast.value.canonical || "https://ibc003myr.com",
+      //   },
+      // ],
       meta: [
         {
           name: "robots",
